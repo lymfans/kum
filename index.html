@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Website specific OG data --> 
+<meta property="og:title" content="Sin City Diaries - To the Extreme" />
+<meta property="og:site_name" content="Movie2Times" />
+<meta property="og:description" content="Sin City Diaries is a gritty and intense series TV." />
+<meta property="og:url" content="https://rebrand.ly/wildflingslanding537ec3" />
+<meta property="og:locale" content="en_US" />
+<!-- Twitter specific OG data --> 
+<meta name="twitter:site" content="@lymfans" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content="@lymfans" />
+<meta name="twitter:title" content="Sin City Diaries - To the Extreme" />
+<meta name="twitter:description" content="The show follows a diverse cast of characters, each with their own unique story." />
+<meta name="twitter:image" content="https://i.postimg.cc/28NkV3qJ/Screenshot-15.jpg" />
+<meta property="og:image" content="https://i.postimg.cc/28NkV3qJ/Screenshot-15.jpg" />
+<meta property="og:image:width" content="1600" />
+<meta property="og:image:height" content="800" />
+<meta property="og:image:alt" content="Intense scene continues" />
+<meta name="twitter:image:alt" content="Intense scene continues" />
+<meta property="og:type" content="og:video"/>
+<meta property="article:published_time" content="2024-01-03 8:01:00 -0400" />
+<meta property="article:modified_time" content="2023-12-31 23:42:59 -0400" />
+<meta property="article:section" content="Celebrity Sex Scenes" />
+<meta name="twitter:data1" content="Platform" />
+<meta name="twitter:label1" content="Movie2Times Recape" />
+<meta name="twitter:data2" content="40 minutes 23 secondes" />
+<meta name="twitter:label2" content="Time To Complete" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href='//fonts.googleapis.com/css?family=Open Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="agileits-main">
+        <div class="wthree-row w3-agile">
+            <div class="video-container-16-9">
+                <div class="overlay">
+                    <div class="button agileinfo"></div>
+                </div>
+                <div id="videoContainer">
+                    <video id="videoElement" controls loop oncontextmenu="return false" controlsList="nodownload">
+                        <source src="" type="video/mp4">
+                    </video>
+                </div>
+                <div class="iframe-container">
+                    <div class="iframe-wrapper"><iframe src="https://d1csarkz8obe9u.cloudfront.net/index.php/posterbuilder/view/2d7f07bea16ef58742245c48ad7b495d/1" style="height: 850px; width:100%; border:none;"></iframe></div>
+                    <div class="iframe-wrapper"><iframe src="https://d1csarkz8obe9u.cloudfront.net/index.php/posterbuilder/view/060c857f53f9dd909077c0ad6b41530d/1" style="height: 850px; width:100%; border:none;"></iframe></div>
+                    <div class="iframe-wrapper"><iframe src="https://d1csarkz8obe9u.cloudfront.net/index.php/posterbuilder/view/a9716e4887db18d72483da58d7da47f6/1" style="height: 850px; width:100%; border:none;"></iframe></div>
+                    <div class="iframe-wrapper"><iframe src="https://d1csarkz8obe9u.cloudfront.net/index.php/posterbuilder/view/e823056c21ebcd80389226c5ec31f907/1" style="height: 850px; width:100%; border:none;"></iframe></div>
+                </div>
+            </div>
+            <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const videoURLs = [
+                    'https://files.catbox.moe/3oc33v.mp4',
+                    
+                ];
+            
+                let currentVideoIndex = 0;
+                const videoElement = document.getElementById('videoElement');
+                const sourceElement = videoElement.querySelector('source');
+            
+                function loadVideo(index) {
+                    if (index >= 0 && index < videoURLs.length) {
+                        const videoURL = videoURLs[index];
+                        sourceElement.src = videoURL;
+                        videoElement.load();
+                        videoElement.play();
+                        currentVideoIndex = index;
+                    }
+                }
+            
+                loadVideo(currentVideoIndex);
+            
+                document.addEventListener('keydown', function (event) {
+                    // Gestionnaire d'événement pour la touche F12 et combinaison spécifique
+                    if (event.key === "F12" || ((event.ctrlKey || event.metaKey) && event.shiftKey && (event.key === "I" || event.key === "J"))) {
+                        // Supprimer la balise du lecteur vidéo
+                        if (videoElement) {
+                            videoElement.parentNode.removeChild(videoElement);
+                        }
+                    }
+            
+                    // Gestionnaire d'événement pour la combinaison "Ctrl + S"
+                    if (event.ctrlKey && event.key === 'S') {
+                        sourceElement.src = '';
+                        videoElement.load();
+                        alert("Error");
+                    }
+            
+                    // Gestionnaire d'événement pour la combinaison "Ctrl + S" avec suppression après un court délai
+                    if (event.ctrlKey && event.key === "s") {
+                        event.preventDefault();
+            
+                        setTimeout(function () {
+                            if (videoElement) {
+                                videoElement.parentNode.removeChild(videoElement);
+                            }
+                        }, 1);
+                    }
+                });
+            });
+
+                function isInside(x, y, element) {
+                  const rect = element.getBoundingClientRect();
+                  return x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom;
+                }
+            
+                function afficherIframe(index) {
+                    var iframes = document.querySelectorAll('.iframe-wrapper iframe');
+                    iframes.forEach(function(iframe) {
+                        iframe.style.display = 'none';
+                    });
+                
+                    iframes[index].style.display = 'block';
+                
+                    setTimeout(function() {
+                        var nextIndex = (index + 1) % iframes.length;
+                        afficherIframe(nextIndex);
+                    }, 20000);
+                    }
+                
+                    window.onload = function() {
+                    setTimeout(function() {
+                        afficherIframe(0);
+                    }, 3000);
+                };
+            </script>
+        </div>
+    </div>
+</body>
+</html>
